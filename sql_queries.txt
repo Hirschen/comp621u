@@ -1,0 +1,4 @@
+select count(*), posts.created_at as POST_CREATED_AT, posts.id as POST_ID, member.id as MEMBER_ID, member_addresses.city as MEMBER_CITY, member_addresses.lat as LAT, member_addresses.lng as LNG
+from member, posts, member_addresses
+where member.id = posts.id and member.id = member_addresses.id
+order by posts.created_at;
