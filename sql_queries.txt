@@ -2,3 +2,27 @@ select posts.created_at as POST_CREATED_AT, posts.id as POST_ID, member.id as ME
 from member, posts, member_addresses
 where member.id = posts.id and member.id = member_addresses.id
 order by posts.created_at;
+
+
+
+ssh cedric@206.188.6.182
+mysql -u  a0173201 -p938000 -h206.188.6.182 a0173200_innodb1
+./asw_dump_load.rb -m load -c "-h 127.0.0.1 -u root asw_major"
+
+
+CREATE TABLE cedric_tmp(id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id), POST_CREATED_AT DATETIME, POST_ID int, MEMBER_ID int, MEMBER_CITY char(63), LAT decimal(10,6), LNG decimal(10,6));
+
+INSERT INTO cedric_tmp(POST_CREATED_AT, POST_ID, MEMBER_ID, MEMBER_CITY, LAT, LNG)
+select posts.created_at as POST_CREATED_AT, posts.id as POST_ID, member.id as MEMBER_ID, member_addresses.city as MEMBER_CITY, member_addresses.lat as LAT, member_addresses.lng as LNG
+from member, posts, member_addresses
+where member.id = posts.id and member.id = member_addresses.id
+order by posts.created_at;
+
+mysqldump  -u  a0173201 -p938000 -h206.188.6.182 a0173200_innodb1 cedric_tmp > cedric_tmp.sql
+
+mysql -u root asw_major < tmp_cedric.sql
+mv cedric_tmp.sql post_coordinates.sql
+
+mysql -u root asw_major < post_coordinates.sql
+
+RENAME TABLE cedric_tmp TO post_coordinates;
