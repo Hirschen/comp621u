@@ -1,29 +1,30 @@
-<HTML>
-<HEAD>
-<TITLE>Cookie map</TITLE>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-
-<script type="text/javascript" src="http://www.google.com/jsapi?key=ABCDEFG&hl=en"></script>
-<script type="text/javascript">
-	google.load("maps", "2");
-	// Call this function when the page has been loaded
-	function initialize() {
-		var map = new google.maps.Map2(document.getElementById("map"));
-		map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
-	}
-	google.setOnLoadCallback(initialize);
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+  html { height: 100% }
+  body { height: 90%; margin: 0px; padding: 0px }
+  #map_canvas { height: 100% }
+</style>
+<script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
 </script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(22.24786, 114.203384);
+    var myOptions = {
+      zoom: 3,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+  }
 
-</HEAD>
-<BODY BGCOLOR=#F6FAFD link="#0099FF" vlink="#0099CC" alink="#0099FF" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
-
-
-
-<div align="center">
-<IMG SRC="images/cookie.jpg" WIDTH=156 HEIGHT=154 ALT=""></TD>
-</div>
-
-
-
+</script>
+</head>
+<body onload="initialize()">
+  <div id="map_canvas" style="width:100%; height:100%"></div>
 </body>
-</HTML>
+</html>
