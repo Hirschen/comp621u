@@ -13,6 +13,7 @@
   
   var map;
   var markersArray = [];
+  var circlesArray = [];
 
   function initialize() {
     var latlng = new google.maps.LatLng(23.659619, 18.929443);
@@ -26,7 +27,7 @@
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
     google.maps.event.addListener(map, 'click', function(event) {
-      addMarker(event.latLng);
+      addCircle(event.latLng);
     });
   }
 
@@ -37,23 +38,38 @@
     });
     markersArray.push(marker);
   }
+  function addCircle(location) {
+    circle = new google.maps.Circle({
+      strokeColor: "#FF0000",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0.35,
+      map: map,
+      center: location,
+      radius: 300000
+    });
+    circlesArray.push(circle);
+  }
  
   // Deletes all markers in the array by removing references to them
   function deleteOverlays() {
-    if (markersArray) {
+    /*if (markersArray) {
       for (i in markersArray) {
         markersArray[i].setMap(null);
       }
       markersArray.length = 0;
+    }*/
+    if (circlesArray) {
+      for (i in circlesArray) {
+        circlesArray[i].setMap(null);
+      }
+      circlesArray.length = 0;
     }
   }
 
 </script>
 </head>
-
-
-
-
 
 <body onload="initialize();">
   <div id="map_canvas" style="width:100%; height:100%"></div>
@@ -76,7 +92,7 @@ Date and time: <input type="datetime" name="user_date" />
 </form>
 <center>
 <div>
-    <input onclick="deleteOverlays();" type=button value="Delete markers"/> 
+    <input onclick="deleteOverlays();" type=button value="Delete everything"/> 
   </div> 
 </center>
 <footer style="text-align:center">By Cedric Waldburger and Christoffer Hirsimaa</footer>
