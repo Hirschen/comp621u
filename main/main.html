@@ -26,5 +26,18 @@
 </head>
 <body onload="initialize()">
   <div id="map_canvas" style="width:100%; height:100%"></div>
+<!--<input type="range" min="0" max="100" value="50" step="1" onchange="showValue(this.value)" />
+<span id="range">50</span>
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+-->
+<form action="demo_form.asp" method="get">
+Date and time: <input type="datetime" name="user_date" />
+<input type="submit" />
+</form>
 </body>
 </html>
