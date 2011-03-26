@@ -1,3 +1,7 @@
+//BASED ON 
+//http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/overlays.html#RemovingOverlays
+
+
 var map;
 var markersArray = [];
 var circlesArray = [];
@@ -34,19 +38,19 @@ function addCircle(location) {
     fillOpacity: 0.35,
     map: map,
     center: location,
-    radius: 300000
+    radius: 200000
   });
   circlesArray.push(circle);
 }
 
 // Deletes all markers in the array by removing references to them
 function deleteOverlays() {
-  /*if (markersArray) {
+  if (markersArray) {
     for (i in markersArray) {
       markersArray[i].setMap(null);
     }
     markersArray.length = 0;
-  }*/
+  }
   if (circlesArray) {
     for (i in circlesArray) {
       circlesArray[i].setMap(null);
