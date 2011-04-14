@@ -18,6 +18,20 @@
 </head>
 
 <body onload="initialize();">
+
+  <center>
+  <form>
+    <label>
+      From: 
+      <input id="from_date" type="date"/>
+    </label>
+    <label>
+      To: 
+      <input id="to_date" type="date"/>
+    </center>
+    </label>
+  </form>
+
   <div id="map_canvas" style="width:100%; height:100%"></div>
   <!-- HERE IS A SLIDER I WANTED TO USE FOR TIME BUT CAN'T GET IT TO BE LONGER THAN IT IS!
 
@@ -30,19 +44,6 @@
   }
   </script>
   -->
-
-  <center>
-  <form id="dates" >
-    <label>
-      From: 
-      <input id="from_date" type="date"/>
-    </label>
-    <label>
-      To: 
-      <input id="to_date" type="date"/>
-    </center>
-    </label>
-  </form>
 
   <script>
     //----------------------DONT LOOK HERE >.<
@@ -70,11 +71,10 @@
 
   <center>
   <div>
-    <input id="ani" onclick="animationLoop();" type=button value="Animate"/> 
-  </div> 
-  <div>
+    <input id="ani" onclick="animationLoop();" type=button value="Animate"/>
+    Speed in ms:
+    <input id="speed" type=number value="500"/>
     <input id="clear" onclick="deleteOverlays();" type=button value="Clear Map"/> 
-  </div>
   </div>
 
   </center>

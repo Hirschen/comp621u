@@ -2,7 +2,8 @@
 
 function animationLoop(){
 	//DONT FUCK WITH THIS!
-	setIntHandler = setInterval("loop()",3000);
+	var speed = parseInt(document.getElementById("speed").value);
+	setIntHandler = setInterval("loop()",speed);
 	document.getElementById("ani").disabled=true;
 	document.getElementById("clear").disabled=true;
 };
