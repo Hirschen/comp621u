@@ -28,6 +28,7 @@ function addMarker(location) {
   });
   markersArray.push(marker);
 }
+
 function addCircle(location) {
   circle = new google.maps.Circle({
     strokeColor: "#FF0000",

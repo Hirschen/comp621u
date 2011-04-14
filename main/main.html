@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>var id = null;</script>
+  <script>var setIntHandler = null;</script> <!-- FOR TEH LULZ -->
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <style type="text/css">
     html { height: 100% }
@@ -34,7 +34,7 @@
   <center>
   <form id="dates" >
     <label>
-      From date: 
+      From: 
       <input id="from_date" type="date"/>
     </label>
     <label>
@@ -45,6 +45,7 @@
   </form>
 
   <script>
+    //----------------------DONT LOOK HERE >.<
     var d = new Date();
     var day=d.getDate();
     if(d < 10){
@@ -63,6 +64,8 @@
     document.getElementById("to_date").value = document.getElementById("from_date").value
     document.getElementById("to_date").min = document.getElementById("from_date").min;
     document.getElementById("to_date").max = document.getElementById("from_date").max;
+
+    //-------------------LOOK AGAIN!!!! :D
   </script> 
 
   <center>
