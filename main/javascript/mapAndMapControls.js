@@ -1,7 +1,6 @@
 //BASED ON 
 //http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/overlays.html#RemovingOverlays
 
-
 var map;
 var markersArray = [];
 var circlesArray = [];
