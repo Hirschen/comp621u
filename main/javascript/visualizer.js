@@ -12,6 +12,8 @@ function loop(){
 	var d1 = $("#from_date").data("dateinput");
 	var d2 = $("#to_date").data("dateinput");
 
+	
+	
 	//DO WHATEVER! 
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
