@@ -13,8 +13,9 @@ function loop(){
 	var d2 = $("#to_date").data("dateinput");
 
 	//DO WHATEVER! 
-
+	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
+
 
 	d1.addDay(1);	
 	if(d1.getValue() > (d2.getValue()-1)){
