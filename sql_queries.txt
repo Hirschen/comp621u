@@ -26,3 +26,8 @@ mv cedric_tmp.sql post_coordinates.sql
 mysql -u root asw_major < post_coordinates.sql
 
 RENAME TABLE cedric_tmp TO post_coordinates;
+
+
+
+# date/time selection from sqlit3 db
+select * from post_coordinates where POST_CREATED_AT > date(2004-07) limit 100
