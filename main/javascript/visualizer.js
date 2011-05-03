@@ -1,7 +1,7 @@
 
 
 function animationLoop(){
-	//DONT FUCK WITH THIS!
+	// DONT FUCK WITH THIS!
 	var speed = parseInt(document.getElementById("speed").value);
 	setIntHandler = setInterval("loop()",speed);
 	document.getElementById("ani").disabled=true;
@@ -16,8 +16,8 @@ function loop(){
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
 
-	var jsonobj = getData(d1.getValue());
-
+	var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
+	alert(jsonobj);
 
 	//var latlng = new google.maps.LatLng();
 
@@ -49,6 +49,6 @@ function getData(date)
 	    	return jsonobj=xmlhttp.responseText;
 	    }
 	}
-	xmlhttp.open("GET",("function.php?date="+date),true);
-	xmlhttp.send();
+	xmlhttp.open("GET",("function.php?date="+date),false);
+	xmlhttp.send(null);
 }
