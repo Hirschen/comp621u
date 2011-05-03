@@ -30,9 +30,14 @@ function loop(){
 			dataType: "text",
 			async: false
 		});
-	alert(jsonobj.responseText);
-
-	//var latlng = new google.maps.LatLng();
+	//alert(jsonobj.responseText);
+	var jsonArray = eval('(' + jsonobj + ')');
+	for(i=0;i<jsonArray.length;i=i+1){
+		//5,6
+		var item = jsonArray[i];
+		var latlng = new google.maps.LatLng(item[5],item[6]);
+		addCircle(latlng);
+	}
 
 
 	d1.addDay(1);	
