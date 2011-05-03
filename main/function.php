@@ -1,5 +1,4 @@
 <?php
-
 function fetch_data_by_date() {
 	$date=$_GET["q"];
 	try
