@@ -33,8 +33,9 @@ function loop(){
 	});
 
 
-	//alert(jsonobj.responseText);
-	var jsonArray = eval('(' + jsonobj + ')');
+	alert(jsonobj.responseText);
+	var jsonArray = eval('(' + jsonobj.responseText + ')');
+	var i = 0;
 	for(i=0;i<jsonArray.length;i=i+1){
 		//5,6
 		var item = jsonArray[i];

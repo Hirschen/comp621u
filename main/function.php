@@ -9,11 +9,11 @@ function fetch_data_by_date($date) {
 		$array = $result->fetchAll(PDO::FETCH_ASSOC);
 		unset($result);
 		$json = json_encode($array);
-		$myFile = "testFile.txt";
-		$fh = fopen($myFile, 'w') or die("can't open file");
-		fwrite($fh, $json);
-		fwrite($fh, $date);
-		fclose($fh);
+		// $myFile = "testFile.txt";
+		// $fh = fopen($myFile, 'w') or die("can't open file");
+		// fwrite($fh, $json);
+		// fwrite($fh, $date);
+		// fclose($fh);
 		echo $json;
 	}
 	catch(PDOException $e) {
