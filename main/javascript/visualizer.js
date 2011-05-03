@@ -33,7 +33,7 @@ function loop(){
 
 function getData(date)
 {
-	var jsonobj="";
+	var jsonobj="dfjkls";
 	if (window.XMLHttpRequest)
 	{// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
