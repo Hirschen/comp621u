@@ -16,6 +16,10 @@ function loop(){
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
 
+	var jsonobj = getData(d1.getValue());
+
+
+	//var latlng = new google.maps.LatLng();
 
 
 	d1.addDay(1);	
@@ -42,9 +46,9 @@ function getData(date)
 	{
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 	    {
-	    return jsonobj=xmlhttp.responseText;
+	    	return jsonobj=xmlhttp.responseText;
 	    }
 	}
-	xmlhttp.open("GET","function.php?date="+date,true);
+	xmlhttp.open("GET",("function.php?date="+date),true);
 	xmlhttp.send();
 }
