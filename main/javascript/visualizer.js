@@ -16,14 +16,21 @@ function loop(){
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
 
+
+	
+
 	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
 	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
+	// $.get("function.php?date=2004-06-07", function(data){
+	// 	alert("Data Loaded: " + data);
+	// 	});
 	var jsonobj = $.ajax({
-		type: "GET",
-		url: query,
-		dataType: "text"
-	});
-	alert(jsonobj);
+			type: "GET",
+			url: query,
+			dataType: "text",
+			async: false
+		});
+	alert(jsonobj.responseText);
 
 	//var latlng = new google.maps.LatLng();
 
