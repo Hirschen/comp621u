@@ -16,7 +16,13 @@ function loop(){
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
 
-	var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
+	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
+	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
+	var jsonobj = $.ajax({
+		type: "GET",
+		url: query,
+		dataType: "text"
+	});
 	alert(jsonobj);
 
 	//var latlng = new google.maps.LatLng();
@@ -33,7 +39,7 @@ function loop(){
 
 function getData(date)
 {
-	var jsonobj="dfjkls";
+	var jsonobj="1";
 	if (window.XMLHttpRequest)
 	{// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
