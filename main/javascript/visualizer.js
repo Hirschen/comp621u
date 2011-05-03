@@ -13,8 +13,9 @@ function loop(){
 	var d2 = $("#to_date").data("dateinput");
 
 	//DO WHATEVER! 
-	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
+	var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
+	addCircle(latlng);
 
 
 	
@@ -29,7 +30,9 @@ function loop(){
 			url: query,
 			dataType: "text",
 			async: false
-		});
+	});
+
+
 	//alert(jsonobj.responseText);
 	var jsonArray = eval('(' + jsonobj + ')');
 	for(i=0;i<jsonArray.length;i=i+1){
