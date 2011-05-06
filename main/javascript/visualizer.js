@@ -1,6 +1,7 @@
 
 
 function animationLoop(){
+	alert("starting now");
 	// DONT FUCK WITH THIS!
 	var speed = parseInt(document.getElementById("speed").value);
 	setIntHandler = setInterval("loop()",speed);
@@ -16,9 +17,6 @@ function loop(){
 	var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
 	addCircle(latlng);
-
-
-	
 
 	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
 	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
