@@ -8,8 +8,7 @@ function checkThreads(){
 			dataType: "text",
 			async: false
 	});
-	alert(jsonobj.responseText);
-	document.getElementById("thread_count").value = jsonobj.responseText;
+	document.getElementById("thread_count").value = parseInt(jsonobj.responseText);
 }
 
 function animationLoop(){
@@ -23,6 +22,9 @@ function animationLoop(){
 function loop(){
 	var d1 = $("#from_date").data("dateinput");
 	var d2 = $("#to_date").data("dateinput");
+	if(d1.getValue() > (d2.getValue())-1){
+		return;
+	}
 
 	// create one circle
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
@@ -43,7 +45,7 @@ function loop(){
 	var str2 = '}';
 	var jsonobj = JSON.parse(str1 + jsonobj.responseText + str2);
 	var latlng;
-
+	deleteOverlays();
 	$.each(jsonobj.posts,function(i,post){
 	 latlng = new google.maps.LatLng(post.LAT, post.LNG);
 	 updateCircle(latlng);

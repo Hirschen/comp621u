@@ -45,6 +45,7 @@ function addCircle(location, size) {
     center: location,
     radius: rad
   });
+  circlesArray.push(circle);
 }
 
 
