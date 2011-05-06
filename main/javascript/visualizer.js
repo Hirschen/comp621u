@@ -13,9 +13,9 @@ function loop(){
 	var d2 = $("#to_date").data("dateinput");
 
 	//DO WHATEVER! 
-	var latlng = new google.maps.LatLng(23.659619, 18.929443);
+	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 	//TROLOLOLOLO
-	addCircle(latlng);
+	// addCircle(latlng);
 
 	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
 	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
@@ -25,23 +25,16 @@ function loop(){
 	var jsonobj = $.ajax({
 			type: "GET",
 			url: query,
-			dataType: "text",
+			dataType: "json",
 			async: false
 	});
 
-
-	alert(jsonobj.responseText);
-	var jsonArray = eval('(' + jsonobj.responseText + ')');
-	alert("Length:"+jsonArray.length);
-	var i = 0;
-	for(i=0;i<jsonArray.length;i=i+1){
-		//5,6
-		var item = eval('(' + jsonArray[i] + ')');
-		alert("Inner Length:"+item[i].length);
-		var latlng = new google.maps.LatLng(item[5],item[6]);
-		alert(item[5]);
-		addCircle(latlng);
-	}
+	
+	var latlng;
+	$.each(jsonobj.responseText,function(i,post){
+	 latlng = new google.maps.LatLng(post.lat, post.lng);
+	 addCircle(latlng);
+	});
 
 
 	d1.addDay(1);	
@@ -51,26 +44,4 @@ function loop(){
 		document.getElementById("ani").disabled=false;
 		document.getElementById("clear").disabled=false;
 	}
-}
-
-function getData(date)
-{
-	var jsonobj="1";
-	if (window.XMLHttpRequest)
-	{// code for IE7+, Firefox, Chrome, Opera, Safari
-	  xmlhttp=new XMLHttpRequest();
-	}
-	else
-	{// code for IE6, IE5
-	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-	}
-	xmlhttp.onreadystatechange=function()
-	{
-	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-	    {
-	    	return jsonobj=xmlhttp.responseText;
-	    }
-	}
-	xmlhttp.open("GET",("function.php?date="+date),false);
-	xmlhttp.send(null);
 }
