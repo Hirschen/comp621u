@@ -5,6 +5,7 @@ var map;
 var markersArray = [];
 var circlesArray = [];
 var circlesMap = {};
+var _i = 0;
 
 function initialize() {
   var latlng = new google.maps.LatLng(23.659619, 18.929443);
@@ -46,11 +47,13 @@ function addCircle(location, size) {
   });
 }
 
+
 function updateCircle(location){
   if(circlesMap[location.toString()]){
-    addCircle(location, parseInt(circlesMap[location.toString()]));
-    circlesMap[location.toString()] = (1+parseInt(circlesMap[location])) ;
-    //alert(parseInt(circlesMap[location.toString()]));
+    _i =  parseInt(circlesMap[location.toString()]);
+    circlesMap[location.toString()] = null;
+    addCircle(location, _i);
+    circlesMap[location.toString()] = (1+_i) ;
   }
   else{
     addCircle(location, 1);
