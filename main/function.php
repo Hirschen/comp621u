@@ -26,8 +26,7 @@ function get_thread_nr($startdate, $enddate) {
 		$db = NULL; // close db connection
 		$array = $result->fetchAll(PDO::FETCH_ASSOC);
 		unset($result);
-		$json = json_encode($array);
-		echo $json;
+		echo $array;
 	}
 	catch(PDOException $e) {
 		print 'Exception : '.$e->getMessage();
