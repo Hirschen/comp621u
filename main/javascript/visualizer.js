@@ -12,10 +12,8 @@ function loop(){
 	var d1 = $("#from_date").data("dateinput");
 	var d2 = $("#to_date").data("dateinput");
 
-	//DO WHATEVER! 
+	// create one circle
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
-	//TROLOLOLOLO
-	// addCircle(latlng);
 
 	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
 	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
@@ -29,10 +27,13 @@ function loop(){
 			async: false
 	});
 
-	
+	var str1 = '{"posts": ';
+	var str2 = '}';
+	var jsonobj = JSON.parse(str1 + jsonobj.responseText + str2);
 	var latlng;
-	$.each(jsonobj.responseText,function(i,post){
-	 latlng = new google.maps.LatLng(post.lat, post.lng);
+
+	$.each(jsonobj.posts,function(i,post){
+	 latlng = new google.maps.LatLng(post.LAT, post.LNG);
 	 addCircle(latlng);
 	});
 

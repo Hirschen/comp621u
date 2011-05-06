@@ -32,10 +32,10 @@ function addMarker(location) {
 function addCircle(location) {
   circle = new google.maps.Circle({
     strokeColor: "#FF0000",
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
+    strokeOpacity: 0.1,
+    strokeWeight: 0,
     fillColor: "#FF0000",
-    fillOpacity: 0.35,
+    fillOpacity: 0.01,
     map: map,
     center: location,
     radius: 200000
