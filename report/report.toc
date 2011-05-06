@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}The Data}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}About ASmallWorld}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Facts \& Figures}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Visualization}{4}{section.2}
+\contentsline {section}{\numberline {3}Experiments - News Events}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}2005}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}2006}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}2007}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}2008}{10}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}2009}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}Conclusion}{16}{section.4}

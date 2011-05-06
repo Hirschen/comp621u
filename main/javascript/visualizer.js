@@ -8,7 +8,8 @@ function checkThreads(){
 			dataType: "text",
 			async: false
 	});
-	document.getElementById("thread_count").value = parseInt(jsonobj.responseText);
+	alert(jsonobj.responseText);
+	document.getElementById("thread_count").value = jsonobj.responseText;
 }
 
 function animationLoop(){
