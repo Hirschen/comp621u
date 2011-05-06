@@ -1,4 +1,15 @@
-
+function checkThreads(){
+	var d1 = $("#from_date").data("dateinput");
+	var d2 = $("#to_date").data("dateinput");
+	var query = ("count.php?s_date="+d1.getValue("yyyy-mm-dd")+"&e_date="+d2.getValue("yyyy-mm-dd"))
+	var jsonobj = $.ajax({
+			type: "GET",
+			url: query,
+			dataType: "text",
+			async: false
+	});
+	document.getElementById("thread_count").value = parseInt(jsonobj.responseText);
+}
 
 function animationLoop(){
 	// DONT FUCK WITH THIS!
@@ -16,7 +27,7 @@ function loop(){
 	// var latlng = new google.maps.LatLng(23.659619, 18.929443);
 
 	//var jsonobj = getData(d1.getValue("yyyy-mm-dd"));
-	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"))
+	var query = ("function.php?date="+d1.getValue("yyyy-mm-dd"));
 	// $.get("function.php?date=2004-06-07", function(data){
 	// 	alert("Data Loaded: " + data);
 	// 	});
