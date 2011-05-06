@@ -34,7 +34,7 @@ function addMarker(location) {
 
 function addCircle(location, size) {
   var rad = 20000*Math.log(10*size);
-  var opa = 0.1*Math.log(size);
+  var opa = 0.2*Math.log(size);
   if(size == 1){
     circle = new google.maps.Circle({
     strokeColor: "#0000FF",
