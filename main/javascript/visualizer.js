@@ -35,11 +35,14 @@ function loop(){
 
 	alert(jsonobj.responseText);
 	var jsonArray = eval('(' + jsonobj.responseText + ')');
+	alert("Length:"+jsonArray.length);
 	var i = 0;
 	for(i=0;i<jsonArray.length;i=i+1){
 		//5,6
-		var item = jsonArray[i];
+		var item = eval('(' + jsonArray[i] + ')');
+		alert("Inner Length:"+item[i].length);
 		var latlng = new google.maps.LatLng(item[5],item[6]);
+		alert(item[5]);
 		addCircle(latlng);
 	}
 
