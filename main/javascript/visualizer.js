@@ -1,7 +1,6 @@
 
 
 function animationLoop(){
-	alert("starting now");
 	// DONT FUCK WITH THIS!
 	var speed = parseInt(document.getElementById("speed").value);
 	setIntHandler = setInterval("loop()",speed);
