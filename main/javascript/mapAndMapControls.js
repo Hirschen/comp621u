@@ -3,8 +3,9 @@
 //2004-06-07
 var map;
 var markersArray = [];
-var circlesArray = [];
+var locationArray = [];
 var circlesMap = {};
+var locationMap = {};
 var _i = 0;
 
 function initialize() {
@@ -32,33 +33,52 @@ function addMarker(location) {
 }
 
 function addCircle(location, size) {
-  var rad = 2000*Math.log(10*size);
-  var opa = 0.02*Math.log(size);
-  circle = new google.maps.Circle({
+  var rad = 20000*Math.log(10*size);
+  var opa = 0.1*Math.log(size);
+  if(size == 1){
+    circle = new google.maps.Circle({
     strokeColor: "#0000FF",
     strokeOpacity: 0.1,
-	// no stroke for now
+  // no stroke for now
     strokeWeight: 0.1,  
     fillColor: "#0000FF",
     fillOpacity: opa,
     map: map,
     center: location,
     radius: rad
-  });
-  circlesArray.push(circle);
+    });
+
+    circlesMap[location.toString()]= circle;
+    locationArray.push(location);
+
+  }
+  else{
+    circlesMap[location.toString()].setOptions(
+      {
+      strokeColor: "#0000FF",
+      strokeOpacity: 0.1,
+      // no stroke for now
+      strokeWeight: 0.1,  
+      fillColor: "#0000FF",
+      fillOpacity: opa,
+      map: map,
+      center: location,
+      radius: rad
+      }
+    );
+  }
 }
 
 
 function updateCircle(location){
-  if(circlesMap[location.toString()]){
-    _i =  parseInt(circlesMap[location.toString()]);
-    circlesMap[location.toString()] = null;
+  if(locationMap[location.toString()]){
+    _i =  parseInt(locationMap[location.toString()]);
     addCircle(location, _i);
-    circlesMap[location.toString()] = (1+_i) ;
+    locationMap[location.toString()] = (1+_i) ;
   }
   else{
     addCircle(location, 1);
-    circlesMap[location.toString()] = 1;
+    locationMap[location.toString()] = 1;
   }
 }
 
@@ -70,12 +90,13 @@ function deleteOverlays() {
     }
     markersArray.length = 0;
   }
-  if (circlesArray) {
-    for (i in circlesArray) {
-      circlesArray[i].setMap(null);
+  if (locationArray) {
+    for (i in locationArray) {
+      circlesMap[locationArray[i]].setMap(null);
     }
-    circlesArray.length = 0;
+    locationArray.length = 0;
   }
+  locationMap = {};
   circlesMap = {};
 }
 
