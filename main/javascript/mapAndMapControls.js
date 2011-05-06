@@ -4,6 +4,7 @@
 var map;
 var markersArray = [];
 var circlesArray = [];
+var circlesMap = {};
 
 function initialize() {
   var latlng = new google.maps.LatLng(23.659619, 18.929443);
@@ -17,7 +18,7 @@ function initialize() {
   map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
   google.maps.event.addListener(map, 'click', function(event) {
-    addCircle(event.latLng);
+    addCircle(event.latLng,10);
   });
 }
 
@@ -29,19 +30,33 @@ function addMarker(location) {
   markersArray.push(marker);
 }
 
-function addCircle(location) {
+function addCircle(location, size) {
+  var rad = size*10000;
+  var opa = size*0.1;
   circle = new google.maps.Circle({
     strokeColor: "#0000FF",
     strokeOpacity: 0.1,
 	// no stroke for now
-    strokeWeight: 0,  
+    strokeWeight: 0.1,  
     fillColor: "#0000FF",
-    fillOpacity: 0.01,
+    fillOpacity: opa,
     map: map,
     center: location,
-    radius: 200000
+    radius: rad
   });
   circlesArray.push(circle);
+}
+
+function updateCircle(location){
+  if(circlesMap[location.toString()]){
+    addCircle(location, parseInt(circlesMap[location.toString()]));
+    circlesMap[location.toString()] = (1+parseInt(circlesMap[location])) ;
+    //alert(parseInt(circlesMap[location.toString()]));
+  }
+  else{
+    addCircle(location, 1);
+    circlesMap[location.toString()] = 1;
+  }
 }
 
 // Deletes all markers in the array by removing references to them
@@ -58,5 +73,6 @@ function deleteOverlays() {
     }
     circlesArray.length = 0;
   }
+  circlesMap = {};
 }
 

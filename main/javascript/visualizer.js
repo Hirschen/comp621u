@@ -34,7 +34,7 @@ function loop(){
 
 	$.each(jsonobj.posts,function(i,post){
 	 latlng = new google.maps.LatLng(post.LAT, post.LNG);
-	 addCircle(latlng);
+	 updateCircle(latlng);
 	});
 
 
