@@ -33,19 +33,54 @@
 
   \tableofcontents\newpage
 
-	\section{The Data}
+	\section{Goal}
 		\subsection{About ASmallWorld}
-			ASmallWorld.net is a unique social media combining a by-invitation-only social network with a content delivery platform targeting the "upper end" of the social media market. We are the market leader in our segment. As An integrated media company, ASW is an ideal match for advertisers seeking to target the world$\prime$s tastemakers and develop heightened mindshare with this sophisticated and influential group.
+			ASmallWorld.net (ASW) is a unique social media combining a by-invitation-only social network with a content delivery platform targeting the "upper end" of the social media market. Founded in 2004 even before facebook became popular, ASW stayed the market leader in this segment. As An integrated media company, ASW is an ideal match for advertisers seeking to target the world's tastemakers and develop heightened mindshare with this sophisticated and influential group.
+			\\Some of the site's features are: \begin{itemize}
+				\item a lifestyle and travel magazine called ASmallMagazine
+				\item an eBay-like platform where members trade everything from computers to Houses and Yachts
+				\item a GeoLocator, where member log their trips, ask for sightseeing advice and find selected services for every destination in the Travel Guides
+				\item a Forum where people seek business advice, look for like-minded members all over the globe or discuss current happenings
+				\item many more, less used features
+			\end{itemize}
+			With ASW existing before many of the other web 2.0 sites, it's forum was and is heavily used also to discuss politics and current news. Rumors say, that in 2004 and 2005, ASW members would be faster at posting news to the site's forum than journalists had their news on their respective news websites and ASW functioned as an 'information hub'.
+			\\ Based on this rumor, we decided to see whether it is possible to find correlations between the forum's activity and the real world happenings.
+			
+		\subsection{Our objective}
+			In order to find out, how correlated ASW's forum activity and real life news are, we are building a tool to visualize forum activity over a certain time span using the Google Maps API.
+			\\ We'll use the visualized activity to \begin{itemize}
+				\item have a look at the word wide activity to see if there is a substantial part of the world wide activity is coming from the particular area of the real life's event
+				\item zoom in on that particular region and compare the time span of the real life's event with the weeks before to see if activity increased
+			\end{itemize}
+			We'll then try to conclude where and when the activity on the forum increased due to real life events.
 			
 		\subsection{Facts \& Figures}
 			\begin{itemize}
 				\item \bf Total number of records: \rm 254 622
 				\item \bf First record: \rm June 7, 2004
 				\item \bf Last record: \rm February 2, 2011
+				\item \bf database size and type: \rm 19.5 MB, sqlite3
 			\end{itemize}
+			 		
+	\section{Approach}
+		\subsection{Getting the Data}
+		ASW uses a SQL-based database to store their data. We were granted to access all their data from mid 2004 until early 2010. Using scripting languages, we converted the database dump into a sqlite database that we could afterwards use locally and online without setting up a database server. The database contained one table with each record containing this information: 
+		\\ id, post\_id, creation\_date, member\_id, member\_city, lng (langitude), lat (latitude) 
+		
+		\subsection{Building the Visualizer}
+		We've used the Google Maps API to .... can you outline what you think should be written here?	
+		
+		\subsection{Setting up the Experiment}
+		In order to test our hypothesis that real life events and the forum activity are correlated, we decided to only look at the years with a full dataset (2005-2008) and for each year to select 3 events:
+		\begin{itemize}
+			\item an event that was present in public newspapers for approximately 1 week
+			\item an event that was present for approximately 2 weeks
+			\item an event that was discussed in the news for a month or longer
+		\end{itemize}
+		We selected the events based on \url{http://moldova.org} and we referred to the particular article at the beginning of each year.
+
  \newpage
- 		
-	\section{Visualization}
+
 	
 	\section{Experiments - News Events}
 			\subsection{2005}
@@ -239,7 +274,7 @@
 						
 					\item \bf Michael Jackson's death \rm
 						\\ Michael Jackson the most famous US singer dies after he suffered cardiac arrest at his home in the Holmby Hills neighborhood in Los Angeles, California. Later the Los Angeles County Coroner declared Jackson's death a homicide caused by the combination of drugs in his body.
-\\ Conrad Murray is the doctor that had to take care of Michael$\prime$ s health before his death, and in 2011 he is still under charge of involuntary manslaughter. Internet traffic reaches unprecedented levels after entertainer Michael Jackson's death triggers an outpouring of worldwide grief.
+\\ Conrad Murray is the doctor that had to take care of Michael's health before his death, and in 2011 he is still under charge of involuntary manslaughter. Internet traffic reaches unprecedented levels after entertainer Michael Jackson's death triggers an outpouring of worldwide grief.
 						\\\\ \bf time span: \rm June 25 - July 2
 						\\ \bf geographical area: \rm USA
 						\\ \bf total number of threads: \rm 38724
@@ -265,6 +300,6 @@
 				\end{itemize}
  \newpage	
 	\section{Conclusion}
-		The Visualizer built for our project is currently available at \href{http://cedricwaldburger.ch/comp621u/main.html}
+		The Visualizer built for our project is currently available at \url{http://cedricwaldburger.ch/comp621u/main.html} and will be removed by the end of the semester.
 
 \end{document}
