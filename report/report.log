@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  7 MAY 2011 01:39
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  8 MAY 2011 23:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -547,206 +547,211 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 54--59
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+ [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
 
  []
 
-<img/2005-1.png, id=87, 908.39375pt x 525.965pt>
+<img/2005-1.png, id=113, 908.39375pt x 525.965pt>
 File: img/2005-1.png Graphic file (type png)
  <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 60--61
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 95--96
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 72--73
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
-[4 <./img/2005-1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+[5 <./img/2005-1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 84--85
-[][] 
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 95--100
-
- []
-
-File: img/2005-1.png Graphic file (type png)
-<use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 101--102
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--112
-
- []
-
-File: img/2005-1.png Graphic file (type png)
-<use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 113--114
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 119--120
 [][] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 125--126
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 136--137
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+ []
+
+File: img/2005-1.png Graphic file (type png)
+<use img/2005-1.png>
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 148--149
 [][] 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 136--141
+Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 142--143
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--153
-
- []
-
-File: img/2005-1.png Graphic file (type png)
-<use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 154--155
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 160--161
 [][] 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 160--165
+Underfull \hbox (badness 10000) in paragraph at lines 171--176
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 166--167
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 177--178
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
+
+ []
+
+File: img/2005-1.png Graphic file (type png)
+<use img/2005-1.png>
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 189--190
 [][] 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 177--182
+Underfull \hbox (badness 10000) in paragraph at lines 195--200
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 183--184
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 201--202
 [][] 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 195--196
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 218--219
 [][] 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 206--208
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--216
-
- []
-
-File: img/2005-1.png Graphic file (type png)
-<use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 217--218
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 230--231
 [][] 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 228--233
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 234--235
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 241--243
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--251
+
+ []
+
+File: img/2005-1.png Graphic file (type png)
+<use img/2005-1.png>
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 252--253
 [][] 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 240--246
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 247--248
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 269--270
 [][] 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 253--258
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
 
  []
 
 File: img/2005-1.png Graphic file (type png)
 <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 259--260
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 282--283
 [][] 
  []
 
-[15] [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 288--293
+
+ []
+
+File: img/2005-1.png Graphic file (type png)
+<use img/2005-1.png>
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 294--295
+[][] 
+ []
+
+[16] [17]
+Overfull \hbox (51.48917pt too wide) in paragraph at lines 303--304
+\T1/cmr/m/n/10.95 The Vi-su-al-izer built for our project is cur-rently avail-a
+ble at []$\T1/cmtt/m/n/10.95 http : / / cedricwaldburger .
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+[18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: FD47DEA159066045E8CBFD9B41588F76;596.
+(rerunfilecheck)             Checksum: 751038EFE486728D8B4BCD99995C3A03;864.
  ) 
 Here is how much of TeX's memory you used:
- 5589 strings out of 493747
- 81560 string characters out of 3143547
- 157985 words of memory out of 3000000
- 8733 multiletter control sequences out of 15000+200000
- 17754 words of font info for 42 fonts, out of 3000000 for 9000
+ 5600 strings out of 493747
+ 81712 string characters out of 3143547
+ 161992 words of memory out of 3000000
+ 8738 multiletter control sequences out of 15000+200000
+ 18068 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,11n,30p,564b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,11n,30p,564b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
@@ -760,11 +765,12 @@ live/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
 /2010/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2
 010/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (17 pages, 792647 bytes).
+0/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2010/
+texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on report.pdf (18 pages, 827376 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
