@@ -32,14 +32,17 @@ function addMarker(location) {
   markersArray.push(marker);
 }
 
-function addCircle(location, size) {
+function addCircle(location, size, span) {
   var rad = 20000*Math.log(10*size);
   var opa = 0.2*Math.log(size);
+  if(opa > 0.95){
+    opa = 0.95;
+  }
   if(size == 1){
     circle = new google.maps.Circle({
     strokeColor: "#0000FF",
     strokeOpacity: 0.1,
-  // no stroke for now
+    // no stroke for now
     strokeWeight: 0.1,  
     fillColor: "#0000FF",
     fillOpacity: opa,
@@ -70,14 +73,14 @@ function addCircle(location, size) {
 }
 
 
-function updateCircle(location){
+function updateCircle(location, span){
   if(locationMap[location.toString()]){
     _i =  parseInt(locationMap[location.toString()]);
-    addCircle(location, _i);
+    addCircle(location, _i, span);
     locationMap[location.toString()] = (1+_i) ;
   }
   else{
-    addCircle(location, 1);
+    addCircle(location, 1, span);
     locationMap[location.toString()] = 1;
   }
 }

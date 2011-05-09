@@ -1,4 +1,9 @@
 function checkThreads(){
+	var number = fetchNrThreads();
+	document.getElementById("thread_count").value = number;
+}
+
+function fetchNrThreads(){
 	var d1 = $("#from_date").data("dateinput");
 	var d2 = $("#to_date").data("dateinput");
 	var query = ("count.php?s_date="+d1.getValue("yyyy-mm-dd")+"&e_date="+d2.getValue("yyyy-mm-dd"))
@@ -8,10 +13,13 @@ function checkThreads(){
 			dataType: "text",
 			async: false
 	});
-	document.getElementById("thread_count").value = parseInt(jsonobj.responseText);
+	return parseInt(jsonobj.responseText);
 }
 
+var span = 0;
+
 function animationLoop(){
+	deleteOverlays();
 	var d1 = $("#from_date").data("dateinput");
 	var d2 = $("#to_date").data("dateinput");
 	if(d1.getValue() > (d2.getValue())-1){
@@ -22,6 +30,7 @@ function animationLoop(){
 	setIntHandler = setInterval("loop()",speed);
 	document.getElementById("ani").disabled=true;
 	document.getElementById("clear").disabled=true;
+	//span = fetchNrThreads();
 };
 
 function loop(){
@@ -49,8 +58,10 @@ function loop(){
 	var latlng;
 
 	$.each(jsonobj.posts,function(i,post){
-	 latlng = new google.maps.LatLng(post.LAT, post.LNG);
-	 updateCircle(latlng);
+		if((post.LAT != null) && (post.LNG != null)){
+			latlng = new google.maps.LatLng(post.LAT, post.LNG);
+	 		updateCircle(latlng, span);
+		}
 	});
 
 	d1.addDay(1);	
