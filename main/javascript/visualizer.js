@@ -51,18 +51,27 @@ function loop(){
 			dataType: "json",
 			async: false
 	});
+	
+	if(jsonobj.responseText != ""){
+		var response = jsonobj.responseText;
+		var str1 = '{"posts": ';
+		var str2 = '}';
+		var jsonString = str1 + response + " " + str2;
+		//alert(jsonString);
+		var jsonArr = JSON.parse(jsonString);
+		var latlng;
 
-	var str1 = '{"posts": ';
-	var str2 = '}';
-	var jsonobj = JSON.parse(str1 + jsonobj.responseText + str2);
-	var latlng;
+		$.each(jsonArr.posts,function(i,post){
+			if((post.LAT != null) && (post.LNG != null)){
+				latlng = new google.maps.LatLng(post.LAT, post.LNG);
+		 		updateCircle(latlng, span);
+			}
+		});
+	}
+	else{
+		alert("NULL WTF!! on "+d1.getValue("yyyy-mm-dd"));
+	}
 
-	$.each(jsonobj.posts,function(i,post){
-		if((post.LAT != null) && (post.LNG != null)){
-			latlng = new google.maps.LatLng(post.LAT, post.LNG);
-	 		updateCircle(latlng, span);
-		}
-	});
 
 	d1.addDay(1);	
 	if(d1.getValue() > (d2.getValue()-1)){
