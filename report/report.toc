@@ -9,8 +9,8 @@
 \contentsline {subsection}{\numberline {2.3}Setting up the Experiment}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Experiments - News Events}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}2005}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}2006}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}2007}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}2008}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}2009}{14}{subsection.3.5}
-\contentsline {section}{\numberline {4}Conclusion}{18}{section.4}
+\contentsline {subsection}{\numberline {3.2}2006}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}2007}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}2008}{10}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}2009}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}Conclusion}{16}{section.4}
