@@ -5,6 +5,7 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{float}
 
 \setlength\fboxsep{0.25cm}
 \setlength\fboxrule{0pt}
@@ -100,8 +101,21 @@
 					\\\\ \bf time span: \rm April 2 - April 9
 					\\ \bf geographical area: \rm Vatican
 					\\ \bf total number of threads: \rm 347
-					
-					\includegraphics[width=130mm]{img/post-pope}
+
+					\begin{figure}[H]
+						\vspace{-10pt}	
+						\begin{center}
+							\includegraphics[width=130mm]{img/pre-pope}
+						\end{center}
+						\vspace{-13pt}
+					\end{figure}
+					\begin{figure}[H]
+						\vspace{-10pt}
+  						\begin{center}
+							\includegraphics[width=130mm]{img/post-pope}
+						\end{center}
+						\vspace{-13pt}
+					\end{figure}
 						
 					\bf interpretation: \rm correlated
 					\\ Compared the the week before, we saw an increased activity in many european countries including the UK, Denmark, the South of France, Spain, Switzerland and Italy. Even though the Death of Pope John Paul II is definitely an event with worldwide attention, it is reasonable that it was most discussed around central europe from the the Pope was originally from (Poland). We expected to see more activity in Italy, close to the Vatican, however we can definitely say that there's a strong correlation between the Pope's death and activity on ASW in central Europe.
@@ -113,8 +127,20 @@
 					\\\\ \bf time span: \rm July 7 - July 21
 					\\ \bf geographical area: \rm London, UK
 					\\ \bf total number of threads: \rm 498
-					
-					\includegraphics[width=130mm]{img/post-london}
+					\begin{figure}[H]
+						\vspace{-10pt}
+						\begin{center}
+							\includegraphics[width=130mm]{img/pre-london}
+						\end{center}
+						\vspace{-13pt}
+					\end{figure}
+					\begin{figure}[H]
+						\vspace{-10pt}
+  						\begin{center}
+							\includegraphics[width=130mm]{img/post-london}
+						\end{center}					
+						\vspace{-13pt}
+					\end{figure}
 					
 					\bf interpretation: \rm correlated
 					\\ On the first day of the event there's a massive amount of activity in Paris and London, which proofs that the event and the network activity are definitely correlated. During the week after the event there was more activity in central europe and also cities that usually show not much activity were opening forum threads in large numbers - this includes cities in the Netherlands, Belgium, all over Germany and even in Russia.
@@ -125,8 +151,20 @@
 					\\\\ \bf time span: \rm August 23 - September 23
 					\\ \bf geographical area: \rm USA
 					\\ \bf total number of threads: \rm 4108
-					
-					\includegraphics[width=130mm]{img/post-katrina}
+					\begin{figure}[H]
+						\vspace{-10pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-katrina}
+							\end{center}
+							\vspace{-13pt}
+					\end{figure}
+					\begin{figure}[H]
+						\vspace{-10pt}
+						\begin{center}
+							\includegraphics[width=130mm]{img/post-katrina}
+						\end{center}					
+						\vspace{-13pt}
+					\end{figure}
 					
 					\bf interpretation: \rm correlated
 					\\ The month after Hurricane Katrina, New York showed a lot more activity than usual (the bulb's size is logarithmic to the number of posts) and all over the US new circles popped up, also in areas where there's almost no activity otherwise. This is true for the northern and southern part and also for the east and West Coast. There's no activity in New Orleans which is probably due to a very small user base in that area.
@@ -143,13 +181,24 @@
 						\\\\ \bf time span: \rm January 1 - January 14
 						\\ \bf geographical area: \rm Asia
 						\\ \bf total number of threads: \rm 25930
-						
-						\includegraphics[width=130mm]{img/post-birdflu}
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-birdflu}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-birdflu}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
 						
 						\bf interpretation: \rm not correlated
 						\\ There's more activity in Greece, Portugal, Scandinavia, Egypt, Syria, Singapur and Shanghai. As for Europe this could be due to minor local activities in those countries and as for Asia there's not a big increase to normal activity and the network activity therefore was probably not correlated to the Bird Flu.
-					
-					
+	
 					
 					\item \bf Soccer World Cup \rm
 						\\ Italy wins the World Cup 5-3 vs. France.
@@ -161,6 +210,23 @@
 						
 						\bf interpretation: \rm correlated
 						\\ Even the month before the world cup, there's a lot more activity in europe than usual. During the world cup almost every ASW member city was active in the forum. The existing circles got a bit bigger during this month and there's new activity in the north of Spain, South of France, all over Italy, Ireland, Scandinavia and many others. This month showed so much more activity in smaller and also bigger european cities compared to other months that it is very likely to be related to the World Cup.
+						\begin{figure}[H]
+							\vspace{-13pt}
+  						
+  							\begin{center}
+									\includegraphics[width=130mm]{img/pre-wcfinal}
+									\vspace{-13pt}
+								\end{center}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+									\includegraphics[width=130mm]{img/post-wcfinal}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
+						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
+						\\ More blobs? Not any distinct changes but some new blobs and the already existing ones became a bit bigger.
 						
 						
 					
@@ -174,6 +240,25 @@
 						
 					\bf interpretation: \rm not correlated
 					\\ There are no posts at all from Iraq (maybe due to a limited number of users in this area) and also no drastic changes worlwide. In this case, forum activity is probably not related to Saddam Hussein's sentence to death.
+						\\\\ \bf time span: \rm November 5 - November 12
+						\\ \bf geographical area: \rm Iraq
+						\\ \bf total number of threads: \rm 1212
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-saddam}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/post-saddam}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}		
+						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
+						\\ No difference at all except for humouristicly enough in Argentina. Probably not related.
 						
 						
 							
@@ -187,9 +272,20 @@
 						\\\\ \bf time span: \rm June 27 - July 4
 						\\ \bf geographical area: \rm UK
 						\\ \bf total number of threads: \rm 2098
-					
-						\includegraphics[width=130mm]{img/post-gordon}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-gordon}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+									\includegraphics[width=130mm]{img/post-gordon}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Shows no difference at all, might be explained by there is probably a huge numbers of posts the week before too
 						
@@ -200,9 +296,20 @@
 						\\\\ \bf time span: \rm August 15 - August 29
 						\\ \bf geographical area: \rm South America
 						\\ \bf total number of threads: \rm 3033
-					
-						\includegraphics[width=130mm]{img/post-chile}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-chile}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+							\begin{center}
+								\includegraphics[width=130mm]{img/post-chile}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Never before seen activity emerged from cities in south america during this period.
 						
@@ -213,9 +320,20 @@
 						\\\\ \bf time span: \rm November - December
 						\\ \bf geographical area: \rm Los Angeles, USA
 						\\ \bf total number of threads: \rm 10234
-					
-						\includegraphics[width=130mm]{img/post-writer}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-writer}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-writer}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Nothing visually changed at all.
 						
@@ -231,9 +349,20 @@
 						\\\\ \bf time span: \rm February 17 - March 17
 						\\ \bf geographical area: \rm Kosovo
 						\\ \bf total number of threads: \rm 5250
-					
-						\includegraphics[width=130mm]{img/post-kosovo}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-kosovo}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-kosovo}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Found some acitivty from a city in kosovo and surrounding countries.
 						
@@ -244,9 +373,20 @@
 						\\\\ \bf time span: \rm March 2 - March 9
 						\\ \bf geographical area: \rm Russia
 						\\ \bf total number of threads: \rm 1353
-						
-						\includegraphics[width=130mm]{img/post-medvev}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-medvev}		
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-medvev}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ ?
 
@@ -257,8 +397,20 @@
 						\\\\ \bf time span: \rm May 12 - May 26
 						\\ \bf geographical area: \rm China
 						\\ \bf total number of threads: \rm 1660
-						
-						\includegraphics[width=130mm]{img/post-china}
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-china}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-china}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}						
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Nothing to see here....
 						
@@ -269,9 +421,20 @@
 						\\\\ \bf time span: \rm August 8 - 24
 						\\ \bf geographical area: \rm Beijing, China
 						\\ \bf total number of threads: \rm 1124
-					
-						\includegraphics[width=130mm]{img/post-olympic}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-olympic}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-olympic}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Only activity seen in china moved from Hong Kong to Shanghai during this period.
 						
@@ -286,9 +449,20 @@
 						\\\\ \bf time span: \rm --
 						\\ \bf geographical area: \rm --
 						\\ \bf total number of threads: \rm --
-						
-						\includegraphics[width=130mm]{img/post-birdflu}
-						
+						\begin{figure}[H]
+							\vspace{-13pt}
+  							\begin{center}
+								\includegraphics[width=130mm]{img/pre-birdflu}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}
+						\begin{figure}[H]
+							\vspace{-13pt}
+	  						\begin{center}
+								\includegraphics[width=130mm]{img/post-birdflu}
+							\end{center}
+							\vspace{-13pt}
+						\end{figure}	
 						\bf interpretation: \rm YES OR NO - ARE WE IMPRESSED? :)
 						\\ Can't make any distinction at all but this kind of event that occours during a long period of time might be hard to see.
 						
