@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2}Approach}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Getting the Data}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Building the Visualizer}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Setting up the Experiment}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Setting up the Experiment}{5}{subsection.2.3}
 \contentsline {section}{\numberline {3}Experiments - News Events}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}2005}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}2006}{7}{subsection.3.2}
