@@ -66,7 +66,7 @@
 			 		
 	\section{Approach}
 		\subsection{Getting the Data}
-		ASW uses a SQL-based database to store their data. We were granted to access all their data from mid 2004 until early 2010. Using scripting languages, we converted the database dump into a sqlite database that we could afterwards use locally and online without setting up a database server. The database contained one table with each record containing this information: 
+		ASW uses a SQL-based database to store their data. We were granted to access all their data from mid 2004 until late 2009. Using scripting languages, we converted the database dump into a sqlite database that we could afterwards use locally and online without setting up a database server. The database contained one table with each record containing this information: 
 		\\ id, post\_id, creation\_date, member\_id, member\_city, lng (langitude), lat (latitude) 
 		
 		\subsection{Building the Visualizer}
@@ -79,7 +79,7 @@
 			 opacity = 0.2*log( number Of Posts )
 		\end{equation}
 
-		These formulas were found by trail and error and they resulted in very detailed images.
+		These formulas were found by trail and error and they resulted in very detailed images. For more detailed implementation we refer to our publicly available code in \url{https://github.com/Hirschen/comp621u}.
 		
 		\subsection{Setting up the Experiment}
 		In order to test our hypothesis that real life events and the forum activity are correlated, we decided to only look at the years with a full dataset (2005-2008) and for each year to select 3 events (exception: 4 in 2008, only 2 in 2009):
