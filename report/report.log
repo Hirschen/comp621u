@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 14:32
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 14:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -572,16 +572,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
 
-<img/post-london.png, id=125, 1083.29718pt x 492.33937pt>
+<img/post-london.png, id=125, 1083.29718pt x 492.33937pt> [6 <./img/post-pope.p
+ng>]
 File: img/post-london.png Graphic file (type png)
-
-<use img/post-london.png>
+ <use img/post-london.png>
 Overfull \hbox (37.26088pt too wide) in paragraph at lines 117--118
 [][] 
  []
 
-[6 <./img/post-pope.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
 
  []
 
@@ -589,39 +589,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--129
 File: img/post-katrina.png Graphic file (type png)
 
 <use img/post-katrina.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 130--131
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 129--130
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+[7 <./img/post-london.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
 
  []
 
-[7 <./img/post-london.png> <./img/post-katrina.png>]
-<img/post-birdflu.png, id=140, 1083.29718pt x 492.33937pt>
+<img/post-birdflu.png, id=139, 1083.29718pt x 492.33937pt>
 File: img/post-birdflu.png Graphic file (type png)
 
 <use img/post-birdflu.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 148--149
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+[8 <./img/post-katrina.png> <./img/post-birdflu.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
  []
 
-<img/post-wcfinal.png, id=141, 1083.29718pt x 490.08093pt>
+<img/post-wcfinal.png, id=146, 1083.29718pt x 490.08093pt>
 File: img/post-wcfinal.png Graphic file (type png)
 
 <use img/post-wcfinal.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 161--162
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 160--161
 [][] 
  []
 
-[8 <./img/post-birdflu.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--173
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
 
  []
 
@@ -629,39 +628,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--173
 File: img/post-saddam.png Graphic file (type png)
 
 <use img/post-saddam.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 174--175
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 173--174
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
+[9 <./img/post-wcfinal.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--190
 
  []
 
-[9 <./img/post-wcfinal.png> <./img/post-saddam.png>]
-<img/post-gordon.png, id=155, 1083.29718pt x 490.08093pt>
+<img/post-gordon.png, id=154, 1083.29718pt x 490.08093pt>
 File: img/post-gordon.png Graphic file (type png)
 
 <use img/post-gordon.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 192--193
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 191--192
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--204
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
 
  []
 
-<img/post-chile.png, id=156, 1083.29718pt x 490.08093pt>
+[10 <./img/post-saddam.png> <./img/post-gordon.png>]
+<img/post-chile.png, id=161, 1083.29718pt x 490.08093pt>
 File: img/post-chile.png Graphic file (type png)
 
 <use img/post-chile.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 205--206
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 204--205
 [][] 
  []
 
-[10 <./img/post-gordon.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--217
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--216
 
  []
 
@@ -669,38 +668,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--217
 File: img/post-writer.png Graphic file (type png)
 
 <use img/post-writer.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 218--219
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
-[11 <./img/post-chile.png> <./img/post-writer.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 230--235
+[11 <./img/post-chile.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  []
 
-<img/post-kosovo.png, id=171, 1083.29718pt x 491.58656pt>
+<img/post-kosovo.png, id=170, 1083.29718pt x 491.58656pt>
 File: img/post-kosovo.png Graphic file (type png)
 
 <use img/post-kosovo.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 236--237
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 235--236
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--248
+Underfull \hbox (badness 10000) in paragraph at lines 242--247
 
  []
 
-<img/post-medvev.png, id=172, 1083.29718pt x 490.83376pt>
+[12 <./img/post-writer.png> <./img/post-kosovo.png>]
+<img/post-medvev.png, id=177, 1083.29718pt x 490.83376pt>
 File: img/post-medvev.png Graphic file (type png)
 
 <use img/post-medvev.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 249--250
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 248--249
 [][] 
  []
 
-[12 <./img/post-kosovo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 256--261
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--260
 
  []
 
@@ -708,58 +708,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--261
 File: img/post-china.png Graphic file (type png)
 
 <use img/post-china.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 262--265
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 261--264
 [][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--273
+[13 <./img/post-medvev.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 267--272
 
  []
 
-[13 <./img/post-medvev.png> <./img/post-china.png>]
-<img/post-olympic.png, id=186, 1083.29718pt x 490.08093pt>
+<img/post-olympic.png, id=185, 1083.29718pt x 490.08093pt>
 File: img/post-olympic.png Graphic file (type png)
 
 <use img/post-olympic.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 274--275
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 273--274
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+[14 <./img/post-china.png> <./img/post-olympic.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 File: img/post-birdflu.png Graphic file (type png)
 <use img/post-birdflu.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 291--292
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 290--291
 [][] 
  []
 
-[14 <./img/post-olympic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 297--303
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--302
 
  []
 
-<img/2005-1.png, id=193, 908.39375pt x 525.965pt>
+[15] <img/2005-1.png, id=197, 908.39375pt x 525.965pt>
 File: img/2005-1.png Graphic file (type png)
  <use img/2005-1.png>
-Overfull \hbox (37.26088pt too wide) in paragraph at lines 304--305
+Overfull \hbox (37.26088pt too wide) in paragraph at lines 303--304
 [][] 
  []
 
-[15] [16 <./img/2005-1.png (PNG copy)>]
-Overfull \hbox (51.48917pt too wide) in paragraph at lines 325--326
+[16 <./img/2005-1.png (PNG copy)>]
+Overfull \hbox (51.48917pt too wide) in paragraph at lines 324--325
 \T1/cmr/m/n/10.95 The Vi-su-al-izer built for our project is cur-rently avail-a
 ble at []$\T1/cmtt/m/n/10.95 http : / / cedricwaldburger .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
 [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 751038EFE486728D8B4BCD99995C3A03;864.
  ) 
@@ -770,7 +769,7 @@ Here is how much of TeX's memory you used:
  8792 multiletter control sequences out of 15000+200000
  18068 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 32i,11n,30p,673b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,11n,30p,673b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
@@ -788,7 +787,7 @@ e/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2010/t
 exmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (17 pages, 18000551 bytes).
+Output written on report.pdf (17 pages, 18001201 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  207 compressed objects within 3 object streams
