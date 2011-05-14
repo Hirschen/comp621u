@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 17:18
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 21:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -571,14 +571,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
-<img/pre-pope.png, id=128, 1083.29718pt x 492.33937pt>
+<img/pre-pope.png, id=133, 1083.29718pt x 492.33937pt>
 File: img/pre-pope.png Graphic file (type png)
  <use img/pre-pope.png>
 Overfull \hbox (9.88582pt too wide) in paragraph at lines 119--120
  [] 
  []
 
-<img/post-pope.png, id=130, 1083.29718pt x 488.57532pt>
+<img/post-pope.png, id=135, 1083.29718pt x 488.57532pt>
 File: img/post-pope.png Graphic file (type png)
 
 <use img/post-pope.png>
@@ -587,7 +587,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 126--127
  []
 
 [6 <./img/pre-pope.png> <./img/post-pope.png>]
-<img/pre-london.png, id=137, 1083.29718pt x 490.08093pt>
+<img/pre-london.png, id=142, 1083.29718pt x 490.08093pt>
 File: img/pre-london.png Graphic file (type png)
 
 <use img/pre-london.png>
@@ -600,7 +600,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--147
 
  []
 
-<img/post-london.png, id=138, 1083.29718pt x 492.33937pt>
+<img/post-london.png, id=143, 1083.29718pt x 492.33937pt>
 File: img/post-london.png Graphic file (type png)
 
 <use img/post-london.png>
@@ -609,7 +609,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 151--152
  []
 
 [7 <./img/pre-london.png> <./img/post-london.png>]
-<img/pre-katrina.png, id=146, 1083.29718pt x 490.08093pt>
+<img/pre-katrina.png, id=151, 1083.29718pt x 490.08093pt>
 File: img/pre-katrina.png Graphic file (type png)
 
 <use img/pre-katrina.png>
@@ -622,7 +622,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--171
 
  []
 
-<img/post-katrina.png, id=147, 1082.54437pt x 490.83376pt>
+<img/post-katrina.png, id=152, 1082.54437pt x 490.83376pt>
 File: img/post-katrina.png Graphic file (type png)
 
 <use img/post-katrina.png>
@@ -631,7 +631,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 175--176
  []
 
 [8 <./img/pre-katrina.png> <./img/post-katrina.png>]
-<img/pre-birdflu.png, id=155, 1083.29718pt x 492.33937pt>
+<img/pre-birdflu.png, id=160, 1083.29718pt x 492.33937pt>
 File: img/pre-birdflu.png Graphic file (type png)
 
 <use img/pre-birdflu.png>
@@ -644,7 +644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
  []
 
-<img/post-birdflu.png, id=156, 1083.29718pt x 492.33937pt>
+<img/post-birdflu.png, id=161, 1083.29718pt x 492.33937pt>
 File: img/post-birdflu.png Graphic file (type png)
 
 <use img/post-birdflu.png>
@@ -657,7 +657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--219
 
  []
 
-<img/pre-wcfinal.png, id=162, 1083.29718pt x 490.08093pt>
+<img/pre-wcfinal.png, id=168, 1083.29718pt x 490.08093pt>
 File: img/pre-wcfinal.png Graphic file (type png)
 
 <use img/pre-wcfinal.png>
@@ -665,7 +665,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 224--226
  [] 
  []
 
-<img/post-wcfinal.png, id=163, 1083.29718pt x 490.08093pt>
+<img/post-wcfinal.png, id=169, 1083.29718pt x 490.08093pt>
 File: img/post-wcfinal.png Graphic file (type png)
 
 <use img/post-wcfinal.png>
@@ -674,7 +674,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 231--232
  []
 
 [10 <./img/post-birdflu.png> <./img/pre-wcfinal.png>]
-<img/pre-saddam.png, id=171, 1083.29718pt x 490.08093pt>
+<img/pre-saddam.png, id=176, 1083.29718pt x 490.08093pt>
 File: img/pre-saddam.png Graphic file (type png)
 
 <use img/pre-saddam.png>
@@ -687,7 +687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
-<img/post-saddam.png, id=172, 1083.29718pt x 489.32813pt>
+<img/post-saddam.png, id=177, 1083.29718pt x 489.32813pt>
 File: img/post-saddam.png Graphic file (type png)
 
 <use img/post-saddam.png>
@@ -696,7 +696,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 255--256
  []
 
 [11 <./img/post-wcfinal.png> <./img/pre-saddam.png>]
-<img/pre-gordon.png, id=180, 1083.29718pt x 490.83376pt>
+<img/pre-gordon.png, id=185, 1083.29718pt x 490.83376pt>
 File: img/pre-gordon.png Graphic file (type png)
 
 <use img/pre-gordon.png>
@@ -709,7 +709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--279
 
  []
 
-<img/post-gordon.png, id=181, 1083.29718pt x 490.08093pt>
+<img/post-gordon.png, id=186, 1083.29718pt x 490.08093pt>
 File: img/post-gordon.png Graphic file (type png)
 
 <use img/post-gordon.png>
@@ -718,7 +718,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 283--284
  []
 
 [12 <./img/post-saddam.png> <./img/pre-gordon.png>]
-<img/pre-chile.png, id=188, 1083.29718pt x 491.58656pt>
+<img/pre-chile.png, id=193, 1083.29718pt x 491.58656pt>
 File: img/pre-chile.png Graphic file (type png)
 
 <use img/pre-chile.png>
@@ -731,7 +731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--303
 
  []
 
-<img/post-chile.png, id=189, 1083.29718pt x 490.08093pt>
+<img/post-chile.png, id=194, 1083.29718pt x 490.08093pt>
 File: img/post-chile.png Graphic file (type png)
 
 <use img/post-chile.png>
@@ -740,7 +740,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 307--308
  []
 
 [13 <./img/post-gordon.png> <./img/pre-chile.png>]
-<img/pre-writer.png, id=197, 1083.29718pt x 490.08093pt>
+<img/pre-writer.png, id=202, 1083.29718pt x 490.08093pt>
 File: img/pre-writer.png Graphic file (type png)
 
 <use img/pre-writer.png>
@@ -753,7 +753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--327
 
  []
 
-<img/post-writer.png, id=198, 1083.29718pt x 490.08093pt>
+<img/post-writer.png, id=203, 1083.29718pt x 490.08093pt>
 File: img/post-writer.png Graphic file (type png)
 
 <use img/post-writer.png>
@@ -762,7 +762,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 331--332
  []
 
 [14 <./img/post-chile.png> <./img/pre-writer.png>]
-<img/pre-kosovo.png, id=206, 1083.29718pt x 490.83376pt>
+<img/pre-kosovo.png, id=211, 1083.29718pt x 490.83376pt>
 File: img/pre-kosovo.png Graphic file (type png)
 
 <use img/pre-kosovo.png>
@@ -775,7 +775,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--356
 
  []
 
-<img/post-kosovo.png, id=207, 1083.29718pt x 491.58656pt>
+<img/post-kosovo.png, id=212, 1083.29718pt x 491.58656pt>
 File: img/post-kosovo.png Graphic file (type png)
 
 <use img/post-kosovo.png>
@@ -784,7 +784,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 360--361
  []
 
 [15 <./img/post-writer.png> <./img/pre-kosovo.png>]
-<img/pre-medvev.png, id=214, 1083.29718pt x 489.32813pt>
+<img/pre-medvev.png, id=219, 1083.29718pt x 489.32813pt>
 File: img/pre-medvev.png Graphic file (type png)
 
 <use img/pre-medvev.png>
@@ -797,7 +797,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--380
 
  []
 
-<img/post-medvev.png, id=215, 1083.29718pt x 490.83376pt>
+<img/post-medvev.png, id=220, 1083.29718pt x 490.83376pt>
 File: img/post-medvev.png Graphic file (type png)
 
 <use img/post-medvev.png>
@@ -811,7 +811,7 @@ Overfull \hbox (3.23828pt too wide) in paragraph at lines 388--390
 around Moscow,
  []
 
-<img/pre-china.png, id=222, 1083.29718pt x 492.33937pt>
+<img/pre-china.png, id=227, 1083.29718pt x 492.33937pt>
 File: img/pre-china.png Graphic file (type png)
 
 <use img/pre-china.png>
@@ -824,7 +824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--404
 
  []
 
-<img/post-china.png, id=223, 1083.29718pt x 491.58656pt>
+<img/post-china.png, id=228, 1083.29718pt x 491.58656pt>
 File: img/post-china.png Graphic file (type png)
 
 <use img/post-china.png>
@@ -833,7 +833,7 @@ Overfull \hbox (9.88582pt too wide) in paragraph at lines 408--409
  []
 
 [17 <./img/post-medvev.png> <./img/pre-china.png>]
-<img/pre-olympic.png, id=230, 1083.29718pt x 492.33937pt>
+<img/pre-olympic.png, id=235, 1083.29718pt x 492.33937pt>
 File: img/pre-olympic.png Graphic file (type png)
 
 <use img/pre-olympic.png>
@@ -846,7 +846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--428
 
  []
 
-<img/post-olympic.png, id=231, 1083.29718pt x 490.08093pt>
+<img/post-olympic.png, id=236, 1083.29718pt x 490.08093pt>
 File: img/post-olympic.png Graphic file (type png)
 
 <use img/post-olympic.png>
@@ -887,21 +887,14 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 751038EFE486728D8B4BCD99995C3A03;864
-(rerunfilecheck)             After:  20E5F95D1E86720C45AE317E54ABCACE;934.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 20E5F95D1E86720C45AE317E54ABCACE;934.
  ) 
 Here is how much of TeX's memory you used:
- 5789 strings out of 493747
- 85235 string characters out of 3143547
+ 5790 strings out of 493747
+ 85251 string characters out of 3143547
  163442 words of memory out of 3000000
- 8892 multiletter control sequences out of 15000+200000
+ 8893 multiletter control sequences out of 15000+200000
  18068 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  32i,11n,30p,673b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -922,10 +915,10 @@ e/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2010/t
 exmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (21 pages, 34574407 bytes).
+Output written on report.pdf (21 pages, 34577771 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
  41 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
