@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 14:50
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.5)  14 MAY 2011 15:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -606,12 +606,12 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
-[8 <./img/post-katrina.png> <./img/post-birdflu.png>]
+[8 <./img/post-katrina.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
  []
 
-<img/post-wcfinal.png, id=146, 1083.29718pt x 490.08093pt>
+<img/post-wcfinal.png, id=145, 1083.29718pt x 490.08093pt>
 File: img/post-wcfinal.png Graphic file (type png)
 
 <use img/post-wcfinal.png>
@@ -619,12 +619,12 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 160--161
 [][] 
  []
 
-
+[9 <./img/post-birdflu.png> <./img/post-wcfinal.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 167--172
 
  []
 
-<img/post-saddam.png, id=147, 1083.29718pt x 489.32813pt>
+<img/post-saddam.png, id=152, 1083.29718pt x 489.32813pt>
 File: img/post-saddam.png Graphic file (type png)
 
 <use img/post-saddam.png>
@@ -632,7 +632,7 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 173--174
 [][] 
  []
 
-[9 <./img/post-wcfinal.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 185--190
 
  []
@@ -645,13 +645,12 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 191--192
 [][] 
  []
 
-
+[10 <./img/post-saddam.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 198--203
 
  []
 
-[10 <./img/post-saddam.png> <./img/post-gordon.png>]
-<img/post-chile.png, id=161, 1083.29718pt x 490.08093pt>
+<img/post-chile.png, id=160, 1083.29718pt x 490.08093pt>
 File: img/post-chile.png Graphic file (type png)
 
 <use img/post-chile.png>
@@ -664,7 +663,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--216
 
  []
 
-<img/post-writer.png, id=162, 1083.29718pt x 490.08093pt>
+[11 <./img/post-gordon.png> <./img/post-chile.png>]
+<img/post-writer.png, id=168, 1083.29718pt x 490.08093pt>
 File: img/post-writer.png Graphic file (type png)
 
 <use img/post-writer.png>
@@ -672,7 +672,7 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
-[11 <./img/post-chile.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  []
@@ -685,13 +685,12 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 235--236
 [][] 
  []
 
-
+[12 <./img/post-writer.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 242--247
 
  []
 
-[12 <./img/post-writer.png> <./img/post-kosovo.png>]
-<img/post-medvev.png, id=177, 1083.29718pt x 490.83376pt>
+<img/post-medvev.png, id=176, 1083.29718pt x 490.83376pt>
 File: img/post-medvev.png Graphic file (type png)
 
 <use img/post-medvev.png>
@@ -704,7 +703,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--260
 
  []
 
-<img/post-china.png, id=178, 1083.29718pt x 491.58656pt>
+[13 <./img/post-kosovo.png> <./img/post-medvev.png>]
+<img/post-china.png, id=184, 1083.29718pt x 491.58656pt>
 File: img/post-china.png Graphic file (type png)
 
 <use img/post-china.png>
@@ -712,7 +712,7 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 261--264
 [][]
  []
 
-[13 <./img/post-medvev.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 267--272
 
  []
@@ -725,7 +725,7 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 273--274
 [][] 
  []
 
-[14 <./img/post-china.png> <./img/post-olympic.png>]
+[14 <./img/post-china.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
@@ -736,12 +736,12 @@ Overfull \hbox (37.26088pt too wide) in paragraph at lines 290--291
 [][] 
  []
 
-
+[15 <./img/post-olympic.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 296--302
 
  []
 
-[15] <img/2005-1.png, id=197, 908.39375pt x 525.965pt>
+<img/2005-1.png, id=197, 908.39375pt x 525.965pt>
 File: img/2005-1.png Graphic file (type png)
  <use img/2005-1.png>
 Overfull \hbox (37.26088pt too wide) in paragraph at lines 303--304
@@ -787,7 +787,7 @@ e/2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2010/t
 exmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (17 pages, 18001201 bytes).
+Output written on report.pdf (17 pages, 18002246 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  207 compressed objects within 3 object streams
