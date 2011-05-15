@@ -13,7 +13,7 @@
 
 \title{Correlation of Forum Activity and real world events based on a social network dataset}
 \author{%
-  Cedric Waldburger\thanks{data provided by ASmallWorld Holding, New York}\\
+  Cedric Waldburger\thanks{thanks to ASmallWorld Holding, New York for providing the data}\\
   \small Department of Electrical Engineering\\
   \small ETH Zurich \\
   \small\texttt{ctwaldburger@student.ust.hk}
@@ -28,7 +28,7 @@
   \maketitle
 
   \begin{abstract}
-  	In the beginning of web2.0 there were not as many sites as today where people were able to discuss current events. One popular platform to discuss news was aSmallWorld.net, an invitation-only social network that was started even before facebook. We built a Visualizer to show forum activity on aSmallWorld.net between 2004 and 2009 and we tried to find a correlation to real life events by comparing the visualized data of the event's time span with the activity before. We then tried to conclude in which cases and which years the network activity corresponded to real life events and whether it was still true during the last few years or not. We concluded that in earlier years there was a correlation between events and the forum activity, but in later years the connection is less strong or even non existent.
+  	In the beginning of web2.0 there were not as many sites as today where people were able to discuss current events. One popular platform to discuss news was aSmallWorld.net, an invitation-only social network that was started even before facebook. We built a Visualizer to show forum activity on aSmallWorld.net between 2004 and 2009 and we tried to find a correlation to real life events by comparing the visualized data of the event's time span with the activity before the event had happened. We then tried to conclude in which cases and which years the network activity corresponded to real life events and whether it was still true during the last few years or not. We concluded that in earlier years there was a correlation between events and the forum activity, but in later years the connection is weaker or even nonexistent.
   \end{abstract}
   \newpage
 
@@ -38,11 +38,12 @@
 		\subsection{About ASmallWorld}
 			ASmallWorld.net (ASW) is a unique social media combining a by-invitation-only social network with a content delivery platform targeting the "upper end" of the social media market. Founded in 2004 even before facebook became popular, ASW stayed the market leader in this segment. As An integrated media company, ASW is an ideal match for advertisers seeking to target the world's tastemakers and develop heightened mindshare with this sophisticated and influential group.
 			\\Some of the site's features are: \begin{itemize}
+				\item member profiles and the ability to 'connect' with each other
 				\item a lifestyle and travel magazine called ASmallMagazine
 				\item an eBay-like platform where members trade everything from computers to Houses and Yachts
 				\item a GeoLocator, where member log their trips, ask for sightseeing advice and find selected services for every destination in the Travel Guides
 				\item a Forum where people seek business advice, look for like-minded members all over the globe or discuss current happenings
-				\item many more, less used features
+				\item some more, less used features
 			\end{itemize}
 			With ASW existing before many of the other web 2.0 sites, it's forum was and is heavily used also to discuss politics and current news. Rumors say, that in 2004 and 2005, ASW members would be faster at posting news to the site's forum than journalists had their news on their respective news websites and ASW functioned as an 'information hub'.
 			\\ Based on this rumor, we decided to see whether it is possible to find correlations between the forum's activity and the real world happenings.
@@ -50,16 +51,16 @@
 		\subsection{Our objective}
 			In order to find out, how correlated ASW's forum activity and real life news are, we are building a tool to visualize forum activity over a certain time span using the Google Maps API.
 			\\ We'll use the visualized activity to \begin{itemize}
-				\item have a look at the word wide activity to see if there is a substantial part of the world wide activity is coming from the particular area of the real life's event
+				\item have a look at the world wide activity to see if there is a substantial part of it is coming from the particular area of the real life's event
 				\item zoom in on that particular region and compare the time span of the real life's event with the weeks before to see if activity increased
 			\end{itemize}
-			We'll then try to conclude where and when the activity on the forum increased due to real life events.
+			We'll then try to reason and conclude where and when the activity on the forum increased due to real life events.
 			
 		\subsection{Facts \& Figures}
 			\begin{itemize}
 				\item \bf Total number of records: \rm 254 622
 				\item \bf First record: \rm June 7, 2004
-				\item \bf Last record: \rm February 2, 2011
+				\item \bf Last record: \rm February 2, 2011 (but there's a gap in 2010 and we therefore decided to only look at 2004-2009)
 				\item \bf database size and type: \rm 19.5 MB, sqlite3
 				\item \bf geography: \rm ASW's user base is concentrated in Europe and the east and west coast of the United States (with a main concentration in New York/Boston and Los Angeles/San Francisco)
 			\end{itemize}
@@ -67,19 +68,20 @@
 	\section{Approach}
 		\subsection{Getting the Data}
 		ASW uses a SQL-based database to store their data. We were granted to access all their data from mid 2004 until late 2009. Using scripting languages, we converted the database dump into a sqlite database that we could afterwards use locally and online without setting up a database server. The database contained one table with each record containing this information: 
-		\\ id, post\_id, creation\_date, member\_id, member\_city, lng (langitude), lat (latitude) 
+		%\\ id, post\_id, creation\_date, member\_id, member\_city, lng (langitude), lat (latitude) 
+		\\\\\begin{tabular}{|c|c|c|c|c|c|}\hline id & post\_id & creation\_date & member\_id & lng (longitude) & lat (latitude) \\\hline \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\\hline \end{tabular}
 		
 		\subsection{Building the Visualizer}
 		We used the Google Maps API in javascript to put out circles on a map. We basically put out two date pickers so you could define a time period to visualize in a specified speed. By starting the animation it starts to iterate over each date and for each date make an asynchronized AJAX call to retrieve the posts from the server. The iteration is done by setInterval method so that the browser don't freeze during visualisation. Posts are iterated over to create new circles on the map or increase the size and color intensity. The size and opacity are calculated according to the following formulas \ref{rad} and \ref{opa} for each circle.
 
 		\begin{equation} \label{rad}
-			 radius = 20000*log(10* number Of Posts)
+			 \mbox{radius} = 20000*\log(10* \mbox{numberOfPosts})
 		\end{equation}
 		\begin{equation} \label{opa}
-			 opacity = 0.2*log( number Of Posts )
+			 \mbox{opacity} = 0.2*\log( \mbox{numberOfPosts} )
 		\end{equation}
 
-		These formulas were found by trail and error and they resulted in very detailed images. For more detailed implementation we refer to our publicly available code in \url{https://github.com/Hirschen/comp621u}.
+		These formulas were found through trial and error and they resulted in very detailed images. For more detailed implementation we refer to our publicly available code in \url{https://github.com/Hirschen/comp621u}.
 		
 		\subsection{Setting up the Experiment}
 		In order to test our hypothesis that real life events and the forum activity are correlated, we decided to only look at the years with a full dataset (2005-2008) and for each year to select 3 events (exception: 4 in 2008, only 2 in 2009):
@@ -98,7 +100,7 @@
 		\end{itemize}
 		
 		\subsection{Environment and Code}
-			The Visualizer built for our project is currently available at \url{http://cedricwaldburger.ch/comp621u/main.html} and will be available until 2 weeks after the end of the semester. 
+			The Visualizer built for our project is currently available at \\\url{http://cedricwaldburger.ch/comp621u/main.html} and will be available until 2 weeks after the end of the semester. 
 			\\The code can be pulled from Github on this address \url{https://github.com/Hirschen/comp621u}.
 
  \newpage
@@ -181,7 +183,7 @@
 					\\ The month after Hurricane Katrina, New York showed a lot more activity than usual (the bulb's size is logarithmic to the number of posts) and all over the US new circles popped up, also in areas where there's almost no activity otherwise. This is true for the northern and southern part and also for the east and West Coast. There's no activity in New Orleans which is probably due to a very small user base in that area.
 					
 					
-												
+\newpage												
 				\end{itemize}
 			
 			\subsection{2006}
@@ -500,15 +502,13 @@
 			\item 1 as 'maybe correlated'
 		\end{itemize}
 		which shows that most of the events would not correlate with forum activity.
-		
-		However, during our research we discovered that there's probably not enough users in eastern regions so that we should also look at the outcome as if we only looked at european- and us-affecting events. Out of the 9 events in the US and central Europe, we rated 
+		\\\\However, during our research we discovered that there's probably not enough users in eastern regions so that we should also look at the outcome as if we only looked at european- and us-affecting events. Out of the 9 events in the US and central Europe, we rated 
 		\begin{itemize}
 			\item 5 as 'correlated' or 'probably correlated'
 			\item 3 as 'not correlated' or 'probably not correlated'
 			\item 1 as 'maybe correlated'
 		\end{itemize}
-	
-	We also saw that correlation decreases with time - events in 2004 are more likely to be correlated to real world events than events in 2008 and 2009. This is probably due to a decreasing popularity of the network as well as improved news sites that allow people to retrieve information and discuss outside the network. Also, during 
+		We also saw that correlation decreases with time - events in 2004 are more likely to be correlated to real world events than events in 2008 and 2009. This is probably due to a decreasing popularity of the network as well as improved news sites that allow people to retrieve information and discuss outside the network. Also, during 
 	\\\\We therefore conclude that there was a strong correlation between real world events and forum activity on ASW in the first few years but now, that it has become very easy to blog and discuss ideas everywhere on the web, it has become less popular to discuss real world events on ASW.
 		
 
